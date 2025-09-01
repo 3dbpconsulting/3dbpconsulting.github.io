@@ -1,3 +1,38 @@
+/* --- Brand Header & Logo --- */
+.site-header{
+  background:#1a73e8;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.75rem 1.25rem;
+  position:sticky; top:0; z-index:20;
+  box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+.brand{display:flex; align-items:center; gap:.75rem; text-decoration:none;}
+.logo-mark{width:44px; height:44px; flex:0 0 auto; background:transparent;}
+.wordmark{display:flex; align-items:baseline; gap:.4rem}
+.wordmark .name{
+  font-family:'Poppins',sans-serif; font-weight:700; letter-spacing:.5px;
+  font-size:1.35rem; color:#fff;
+}
+.wordmark .consulting{
+  font-family:'Poppins',sans-serif; font-weight:600; letter-spacing:.15rem;
+  font-size:.9rem; text-transform:uppercase; color:#e8f0fe; opacity:.95;
+}
+
+/* Nav */
+.main-nav a{
+  color:#fff; text-decoration:none; margin-left:1rem; font-weight:500;
+}
+.main-nav a:hover{ color:#00bfa6; }
+
+/* Optional: small screens */
+@media (max-width:640px){
+  .wordmark .consulting{display:none;} /* keep the header compact */
+}
+
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap');
 
