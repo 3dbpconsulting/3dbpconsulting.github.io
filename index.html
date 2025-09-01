@@ -7,14 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>3DBP Consulting</h1>
-    <nav>
-      <a href="#bioinks">Bioinks</a>
-      <a href="#tech">Technology</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Brand Header with Inline SVG Logo -->
+<header class="site-header">
+  <a class="brand" href="#" aria-label="3DBP Consulting Home">
+    <!-- Icon (3D printer nozzle + DNA helix) -->
+    <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-labelledby="logoTitle logoDesc">
+      <title id="logoTitle">3DBP Consulting Logo</title>
+      <desc id="logoDesc">A 3D printer nozzle printing a stylized DNA helix</desc>
+      <!-- Nozzle -->
+      <g stroke="#1a73e8" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M60 10 L78 26 L42 26 Z" fill="#1a73e8" opacity="0.15"/>
+        <path d="M50 26 H70 V40 L60 46 L50 40 Z" fill="#1a73e8" opacity="0.25"/>
+        <path d="M60 46 V58" />
+        <path d="M54 58 H66" />
+      </g>
+
+      <!-- DNA helix (two backbones + rungs) -->
+      <g stroke-width="3" fill="none">
+        <!-- Left backbone -->
+        <path d="M40 65
+                 C 50 58, 70 58, 80 65
+                 C 70 72, 50 72, 40 65
+                 C 50 58, 70 58, 80 65
+                 C 70 72, 50 72, 40 65"
+              stroke="#00bfa6" opacity="0.9"/>
+        <!-- Right backbone (phase shifted) -->
+        <path d="M40 85
+                 C 50 78, 70 78, 80 85
+                 C 70 92, 50 92, 40 85
+                 C 50 78, 70 78, 80 85
+                 C 70 92, 50 92, 40 85"
+              stroke="#1a73e8" opacity="0.9"/>
+
+        <!-- Rungs -->
+        <g stroke="#1a73e8" opacity="0.8">
+          <line x1="45" y1="62" x2="75" y2="62"/>
+          <line x1="45" y1="68" x2="75" y2="68"/>
+          <line x1="45" y1="82" x2="75" y2="82"/>
+          <line x1="45" y1="88" x2="75" y2="88"/>
+        </g>
+      </g>
+
+      <!-- Filament strand coming from nozzle -->
+      <path d="M60 58 C60 60, 55 63, 56 66
+               C58 70, 64 70, 64 74
+               C64 78, 58 79, 58 83" 
+            stroke="#00bfa6" stroke-width="2.5" fill="none" stroke-linec
+
 
   <section id="hero">
     <h2>Bioprinting Solutions and Products</h2>
