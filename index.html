@@ -19,4 +19,110 @@
         <!-- Nozzle -->
         <g stroke="#1a73e8" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
           <path d="M60 10 L78 26 L42 26 Z" fill="#1a73e8" opacity="0.15"/>
-          <p
+          <path d="M50 26 H70 V40 L60 46 L50 40 Z" fill="#1a73e8" opacity="0.25"/>
+          <path d="M60 46 V58" />
+          <path d="M54 58 H66" />
+        </g>
+        <!-- DNA Helix -->
+        <g stroke-width="3" fill="none">
+          <path d="M40 65 C 50 58, 70 58, 80 65
+                   C 70 72, 50 72, 40 65"
+                stroke="#00bfa6"/>
+          <path d="M40 85 C 50 78, 70 78, 80 85
+                   C 70 92, 50 92, 40 85"
+                stroke="#1a73e8"/>
+          <line x1="45" y1="62" x2="75" y2="62" stroke="#1a73e8"/>
+          <line x1="45" y1="88" x2="75" y2="88" stroke="#00bfa6"/>
+        </g>
+      </svg>
+      <!-- Wordmark -->
+      <div class="wordmark">
+        <span class="name">3DBP</span>
+        <span class="consulting">Consulting</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#technology">Technology</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <h1>Pioneering the Future of Bioprinting</h1>
+    <p>Innovative solutions in tissue engineering and regenerative medicine.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>3DBP Consulting is dedicated to advancing healthcare through 3D printed tissues and biomaterials. 
+       Our mission is to bridge the gap between technology and medicine by creating groundbreaking solutions 
+       for regenerative healthcare.</p>
+  </section>
+
+  <!-- Technology -->
+  <section id="technology">
+    <h2>Our Technology</h2>
+    <p>Using cutting-edge bio-inks and precision 3D printing, we develop scalable solutions for research 
+       and medical applications. Our proprietary process ensures reproducibility, biocompatibility, and 
+       customizability for clinical and industrial use.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Case Studies & Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/project1.jpg" alt="3D Bioprinted Tissue">
+        <h3>3D Bioprinted Tissue Models</h3>
+        <p>Engineered complex tissue structures for preclinical drug testing, reducing reliance on animal models.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project2.jpg" alt="Bio-ink Development">
+        <h3>Next-Gen Bio-Inks</h3>
+        <p>Developed custom bio-inks optimized for cell viability and mechanical stability in regenerative medicine.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project3.jpg" alt="Scaffold Printing">
+        <h3>Scaffold Printing</h3>
+        <p>Created biodegradable scaffolds that support cell growth and tissue regeneration in clinical research.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>Email:</strong> <a href="mailto:contact@3dbpconsulting.com">contact@3dbpconsulting.com</a></p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>Location:</strong> Boston, MA, USA</p>
+      </div>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949!2d-71.0589!3d42.3601"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 3DBP Consulting. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
